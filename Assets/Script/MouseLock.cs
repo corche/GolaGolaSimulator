@@ -1,18 +1,13 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class MouseLock : MonoBehaviour
 {
     public static bool isMouseLocked = false;
 
-    private void Start()
-    {
-        SetMouseLock(true);
-    }
 
-    public void OnMouseLock(InputValue value)
+    private void Update()
     {
-        if (value.isPressed)
+        if(Input.GetKeyDown(KeyCode.M))
         {
             MouseLockToggle();
         }

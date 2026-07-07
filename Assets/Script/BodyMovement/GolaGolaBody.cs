@@ -5,7 +5,7 @@ public class GolaGolaBody : MonoBehaviour
 {
     void Update()
     {
-        if (MouseLock.isMouseLocked) MoveToMouse();
+        MoveToMouse();
     }
 
     private void MoveToMouse()
