@@ -64,5 +64,12 @@ public class SettingPanelToggle : MonoBehaviour
         settingPanel.blocksRaycasts = isPanelOpen;
 
         if (isPanelOpen) settingScrollRect.verticalNormalizedPosition = 1f;
+        else
+        {
+            if (EventSystem.current != null)
+            {
+                EventSystem.current.SetSelectedGameObject(null);
+            }
+        }
     }
 }
