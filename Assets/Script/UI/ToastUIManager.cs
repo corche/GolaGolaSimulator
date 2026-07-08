@@ -61,7 +61,7 @@ public class ToastUIManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         AddToast("[M] : 눌러서 마우스 숨기기 토글");
         yield return new WaitForSeconds(2.5f);
-        AddToast("[TAB] : 눌러서 설정 토글");
+        AddToast("[TAB] : 눌러서 메뉴 토글");
     }
 
     /// <summary> <paramref name="messege"/>를 글자로 하는 토스트 메시지 출력 </summary>

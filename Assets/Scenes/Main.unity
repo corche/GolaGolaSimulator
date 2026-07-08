@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3066956, g: 0.41509432, b: 0.22516909, a: 1}
+  m_Color: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1448,6 +1448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 335694759}
+  - component: {fileID: 335694762}
   - component: {fileID: 335694761}
   - component: {fileID: 335694760}
   m_Layer: 5
@@ -1496,7 +1497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD1A0\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 \uD5C8\uC6A9"
+  m_text: "\uD1A0\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 \uD5C8\uC6A9 \uC2A4\uC704\uCE58"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ac98e85c0469c34bbeda1ff6a74163b, type: 2}
   m_sharedMaterial: {fileID: 5249345862805526972, guid: 6ac98e85c0469c34bbeda1ff6a74163b, type: 2}
@@ -1576,6 +1577,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335694758}
   m_CullTransparentMesh: 1
+--- !u!114 &335694762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335694758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf712ea1b1d718944bff5db69be2d94b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SetTextFromToggleSwitch
+  toggleSwitch: {fileID: 811226272}
+  enableColor: {r: 0, g: 1, b: 0, a: 1}
+  disableColor: {r: 1, g: 0, b: 0, a: 1}
+  colorTransitionDuration: 0.2
+  enableText: "\uD1A0\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 \uCF1C\uC9D0"
+  disableText: "\uD1A0\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 \uAEBC\uC9D0"
 --- !u!1 &367055955
 GameObject:
   m_ObjectHideFlags: 0
@@ -4412,6 +4431,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5280407915597960735, guid: e41738cf56a10c3488ad1f324fe553d0, type: 3}
   m_PrefabInstance: {fileID: 1431759208}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1431759213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174977942399389176, guid: e41738cf56a10c3488ad1f324fe553d0, type: 3}
+  m_PrefabInstance: {fileID: 1431759208}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0428dbd016a922d468231f5229b02c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToggleSwitch
 --- !u!1 &1455860343
 GameObject:
   m_ObjectHideFlags: 0
@@ -5258,6 +5288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1777129738}
+  - component: {fileID: 1777129741}
   - component: {fileID: 1777129740}
   - component: {fileID: 1777129739}
   m_Layer: 5
@@ -5386,6 +5417,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777129737}
   m_CullTransparentMesh: 1
+--- !u!114 &1777129741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777129737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13234bd03d3f4742bc49d9e28e28be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UselessSwitch
+  toggleSwitch: {fileID: 1431759213}
+  backgroundPreview: {fileID: 1619934585}
 --- !u!1 &2038259698
 GameObject:
   m_ObjectHideFlags: 0
