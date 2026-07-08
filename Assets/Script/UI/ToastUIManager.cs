@@ -58,10 +58,19 @@ public class ToastUIManager : MonoBehaviour
     /// </summary>
     IEnumerator FirstToast()
     {
-        yield return new WaitForSeconds(1f);
-        AddToast("[M] : 눌러서 마우스 숨기기 토글");
-        yield return new WaitForSeconds(2.5f);
-        AddToast("[TAB] : 눌러서 메뉴 토글");
+        yield return new WaitForSeconds(4f);
+        if (!DataManager.isMobile)
+        {
+            AddToast("<color=orange>[M]</color> : 눌러서 마우스 숨기기 토글");
+            yield return new WaitForSeconds(2.5f);
+            AddToast("<color=orange>[TAB]</color> : 눌러서 메뉴 토글");
+        }
+        else
+        {
+            AddToast("<color=orange>두 손가락으로 탭해</color> 중앙으로 돌아가기");
+            yield return new WaitForSeconds(2.5f);
+            AddToast("<color=orange>더블 탭</color>으로 메뉴 토글");
+        }
     }
 
     /// <summary> <paramref name="messege"/>를 글자로 하는 토스트 메시지 출력 </summary>
